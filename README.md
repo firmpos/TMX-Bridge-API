@@ -1,6 +1,8 @@
 # TMX Bridge Appliance API
 The TMX Bridge API is a series of appliance endpoints that allow you to control T-Max connected devices using a T-Max Manager Pro or the T-Max Manager G2.
 
+Get more information about the TMX Bridge www.tmxbridge.com 
+
 ## Network Setup
 The first part of setup is locating the device on your network. The default IP address is 192.168.0.50. To change this IP address refer to the Network Management Page.
 
