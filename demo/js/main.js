@@ -14,12 +14,18 @@ https://www.appdig.com/
 
 */
 
-//SETUP DEMONSTRATION VALUES ************************
-var TMX_BRIDGE = 'https://demo.tmxbridge.net/service/tmax/';
+//SETUP DEMONSTRATION ****************************
+//READ THIS AND SET YOUR OWN VALUES BELOW OR THIS DEMO WILL NOT WORK
+//Once you setup the local static IP, choose a subdomain and then add it to your local DNS (see the documentation)
+//you can then reference the TMX Bridge using HTTPS. The 'TMX_BRIDGE' global variable should remain as you see
+//it below with the exception of your subdomain in place of 'demo'.
+var TMX_BRIDGE = 'https://demo.tmxbridge.net/';
 var STATE_TIMER_INTERVAL = 5000; //poll every X seconds
 
-//You must setup this array with the real beds you have connected
-var DEVICES_ENABLED = [30, 31, 32];
+//This array represents all T-Max devices enabled at your location. For testing purposes, you don't need real tanning
+//beds, just the 3A/3W timers connected to the T-Max Manager. The integers in the array represent the bed addresses on the Manager.
+//Unless you have 3 beds on addresses 1, 2 and 3... you will need to change the array to reflect your setup.
+var DEVICES_ENABLED = [1, 2, 3];
 
 //END SETUP *************************************
 
