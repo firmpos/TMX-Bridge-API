@@ -1,0 +1,92 @@
+#_working {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(25, 97, 204);
+    text-align: center;
+    font-size: 53px;
+    line-height: 40px;
+    margin: 0;
+    padding: 50px 0;
+    color: #ffffff;
+    z-index: 5000000;
+    font-family: "helvetica neue", helvetica, arial;
+    font-weight: lighter;
+    letter-spacing: 0px;
+}
+.controlItem {
+    padding: 10px;
+    background-color: #eeeeee63;
+    margin: 20px 0;
+}
+.controlItemTitle {
+    margin-bottom: 11px;
+    border-bottom: 1px solid #dddddd82;
+    position: relative;
+}
+.controlItem h5 {
+    margin-top: 0px;
+    margin-bottom: 1px;
+    font-size: 17px;
+    color: #131313;
+}
+.enabledBed {
+    margin: 8px 0;
+    padding: 10px;
+    background-color: #d3d5d345;
+    color: #414141;
+    border-left: 6px solid #525453;
+    position: relative;
+}
+.statusReady {
+    background-color: #54d17345;
+    color: #288543;
+    border-left: 6px solid #03ae35;
+}
+.statusDelay {
+    background-color: #b243994a;
+    color: #955592;
+    border-left: 6px solid #ba359e;
+}
+.statusRunning {
+    background-color: #cce5ff;
+    color: #2472c3;
+    border-left: 6px solid #498ccf;
+}
+.statusRunningOff {
+    background-color: #e1e1e187;
+    color: #666666;
+    border-left: 6px solid #498ccf;
+}
+.statusCooldown {
+    background-color: #d1ecf1;
+    color: #1c91ac;
+    border-left: 6px solid #26aacd;
+}
+.statusDirty {
+    background-color: #f1dad1;
+    color: #c77214;
+    border-left: 6px solid #cd8226;
+}
+.bedOff {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    padding: 10px;
+    background-color: #0a090945;
+    color: #fff;
+    cursor: pointer;
+}
+#statusUpdateNotification {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    padding: 10px;
+    background-color: #cdcdcd21;
+    color: #fff;
+}
+#statusUpdateNotification.thisStatusRunning {
+    background-color: #cdcdcd;
+}

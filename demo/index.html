@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TMX Sample Demo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/main.css" rel="stylesheet" type="text/css" media="all"/>
+
+</head>
+<body>
+
+	<section id="controls" class="container">
+		<div class="bedcontrols">
+			<h3>TMX Sample Demo</h3>
+			<div id="devicePorts" class="controlItem">
+				<div class="controlItemTitle">
+					<h5>Available Ports</h5>
+					<p>Please choose the port TMX is connected on.</p>
+				</div>
+				<div id="availablePortsList"></div>
+			</div>
+			<div id="deviceBed" class="controlItem">
+				<div class="controlItemTitle">
+					<h5>Test T-Max Device</h5>
+					<p>Please choose the device address the bed is connected to. You can then use the options to control the bed.</p>
+				</div>
+				<div>
+					<div class="form-group">
+						<label for="deviceAddresses">T-Max Addresses</label>
+						<select class="form-control" id="deviceAddresses"></select>
+					</div>
+				</div>
+				<div class="form-inline">
+					<div class="form-group mx-sm-3 mb-2">
+						<label for="deviceRuntime" class="">Run Time:</label>
+						<input type="text" class="form-control" id="deviceRuntime" value="5" placeholder="e.g. 5">
+					</div>
+					<div class="form-group mx-sm-3 mb-2">
+						<label for="deviceDelaytime" class="">Delay Time:</label>
+						<input type="text" class="form-control" id="deviceDelaytime" value="3" placeholder="e.g. 3">
+					</div>
+					<button id="btnBedOn" class="btn btn-primary mb-2">Turn Bed On</button>
+				</div>
+			</div>
+			<div id="deviceBedStatus" class="controlItem">
+				<div class="controlItemTitle">
+					<h5>Bed Status</h5>
+					<p>The code starts a timer that polls the bed's state.</p>
+					<div id="statusUpdateNotification">Updating bed status</div>
+				</div>
+				<div id="deviceBedList"></div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
